@@ -193,7 +193,7 @@ const Profit = (props) => {
 
                     </div>
                     <span style={{ fontSize: '26px' }} className="text-total">Tổng lợi nhuận:  </span>
-                    <span style={{ color: '#71cd14', fontSize: '26px' }} className="text-price">{CommonUtils.formatter.format(sumPrice)}</span>
+                    <span style={{ color: '#659DBD', fontSize: '26px' }} className="text-price">{CommonUtils.formatter.format(sumPrice)}</span>
                 </div>
             </div>
         </div>

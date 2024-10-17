@@ -188,7 +188,7 @@ const Turnover = (props) => {
 
                     </div>
                     <span style={{ fontSize: '26px' }} className="text-total">Tổng doanh thu:  </span>
-                    <span style={{ color: '#71cd14', fontSize: '26px' }} className="text-price">{CommonUtils.formatter.format(totalPrice)}</span>
+                    <span style={{ color: '#659DBD', fontSize: '26px' }} className="text-price">{CommonUtils.formatter.format(totalPrice)}</span>
                 </div>
             </div>
         </div>

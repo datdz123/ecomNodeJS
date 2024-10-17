@@ -83,29 +83,32 @@ const LoginWebPage = () => {
         const element = document.querySelector('form');
         element.addEventListener('submit', event => {
             event.preventDefault();
-
         });
+
         let res = await checkPhonenumberEmail({
             phonenumber: inputValues.phonenumber,
             email: inputValues.email
-        })
+        });
+
         if (res.isCheck === true) {
-            toast.error(res.errMessage)
+            toast.error(res.errMessage);
         } else {
-            setInputValues({
-                ...inputValues, ["dataUser"]:
-                {
-                    email: inputValues.email,
-                    lastName: inputValues.lastName,
-                    phonenumber: inputValues.phonenumber,
-                    password: inputValues.password,
-                    roleId: 'R2',
-                }, ["isOpen"]: true
-            })
+            let createUserRes = await createNewUser({
+                email: inputValues.email,
+                lastName: inputValues.lastName,
+                phonenumber: inputValues.phonenumber,
+                password: inputValues.password,
+                roleId: 'R2',
+            });
+
+            if (createUserRes && createUserRes.errCode === 0) {
+                toast.success("Tạo tài khoản thành công");
+                handleLogin(inputValues.email, inputValues.password);
+            } else {
+                toast.error(createUserRes.errMessage);
+            }
         }
-
-
-    }
+    };
     const getBase64FromUrl = async (url) => {
 
         const data = await fetch(url);
