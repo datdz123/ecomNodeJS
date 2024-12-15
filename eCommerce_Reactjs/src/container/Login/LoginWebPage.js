@@ -199,7 +199,7 @@ const LoginWebPage = () => {
                                 <div className="col-sm-6 brand">
                                     <a href="#" className="logo">MR <span>.</span></a>
                                     <div className="heading">
-                                        <h2>Esier</h2>
+                                        <h2> SHOP</h2>
                                         <p>Sự lựa chọn của bạn</p>
                                     </div>
 
@@ -221,8 +221,8 @@ const LoginWebPage = () => {
                                                 <input onClick={() => handleLogin()} type="submit" value="Đăng nhập" />
                                                 <a style={{ cursor: 'pointer', }} className="switch">Tài khoản mới</a>
                                             </div>
-                                            <FacebookLoginButton text="Đăng nhập với Facebook" iconSize="25px" style={{ width: "300px", height: "40px", fontSize: "16px", marginTop: "40px", marginBottom: "10px" }} onClick={() => signInwithFacebook()} />
-                                            <GoogleLoginButton text="Đăng nhập với Google" iconSize="25px" style={{ width: "300px", height: "40px", fontSize: "16px" }} onClick={() => signInwithGoogle()} />
+                                            {/*<FacebookLoginButton text="Đăng nhập với Facebook" iconSize="25px" style={{ width: "300px", height: "40px", fontSize: "16px", marginTop: "40px", marginBottom: "10px" }} onClick={() => signInwithFacebook()} />*/}
+                                            {/*<GoogleLoginButton text="Đăng nhập với Google" iconSize="25px" style={{ width: "300px", height: "40px", fontSize: "16px" }} onClick={() => signInwithGoogle()} />*/}
                                         </form>
                                     </div>{/* End Login Form */}
                                     {/* Signup Form */}

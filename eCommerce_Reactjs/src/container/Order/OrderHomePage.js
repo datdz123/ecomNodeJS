@@ -221,7 +221,7 @@ function OrderHomePage(props) {
             <div className="wrap-order">
                 <div className="wrap-heading-order">
                     <NavLink to="/" className="navbar-brand logo_h">
-                        <img src="/resources/img/logo.png" alt="" />
+<h1> QD SHOP</h1>
                     </NavLink>
                     <span>Thanh Toán</span>
                 </div>

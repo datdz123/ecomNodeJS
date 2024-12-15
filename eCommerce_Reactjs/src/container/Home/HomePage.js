@@ -14,6 +14,7 @@ function HomePage(props) {
     const [dataNewBlog, setdataNewBlog] = useState([])
     const [dataBanner, setdataBanner] = useState([])
     const [dataProductRecommend, setdataProductRecommend] = useState([])
+    // console.log("dataProductRecommend", dataProductRecommend);
     let settings = {
         dots: false,
         Infinity: false,
@@ -81,7 +82,7 @@ function HomePage(props) {
                 {dataBanner && dataBanner.length > 0 &&
                     dataBanner.map((item, index) => {
                         return (
-                            <HomeBanner image={item.image} name={item.name}></HomeBanner>
+                            <HomeBanner image={item.image} name={item.name} ></HomeBanner>
                         )
                     })
                 }
@@ -91,7 +92,7 @@ function HomePage(props) {
 
 
             <MainFeature></MainFeature>
-            <ProductFeature title={"Gợi ý sản phẩm"} data={dataProductRecommend}></ProductFeature>
+            {/*<ProductFeature title={"Gợi ý sản phẩm"} data={dataProductRecommend}></ProductFeature>*/}
             <ProductFeature title={"Sản phẩm đặc trưng"} data={dataProductFeature}></ProductFeature>
             <NewProductFeature title="Sản phẩm mới" description="Những sản phẩm vừa ra mắt mới lạ cuốn hút người xem" data={dataNewProductFeature}></NewProductFeature>
             <HomeBlog data={dataNewBlog} />

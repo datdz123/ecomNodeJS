@@ -10,7 +10,7 @@ function NewProductFeature(props) {
                     infoContent={props.description}> </HeaderContent>
                 <div className="row">
 
-                    <div className="col-lg-12 mt-5 mt-lg-0">
+                    <div className="col-lg-12  mt-lg-0">
                         <div className="row">
                             {props.data && props.data.length > 0 &&
                                 props.data.map((item, index) => {

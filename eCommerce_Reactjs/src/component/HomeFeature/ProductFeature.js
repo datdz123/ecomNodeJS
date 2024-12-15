@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './ProductFeature.scss';
 import { getProductFeatureService } from '../../services/userService';
+
 function ProductFeature(props) {
     let settings = {
         dots: false,
@@ -15,36 +16,35 @@ function ProductFeature(props) {
         slidesToScroll: 1,
     }
 
-    return (
+    // Filter out duplicate products
+    const uniqueProducts = props.data.filter((item, index, self) =>
+        index === self.findIndex((t) => t.id === item.id)
+    );
 
-        <section className="feature_product_area section_gap_bottom_custom">
+    return (
+        <section className="feature_product_area section_gap_bottom_custom p-0">
             <div className="container">
                 <HeaderContent mainContent={props.title}
-                    infoContent="Bạn sẽ không thất vọng khi lựa chọn"> </HeaderContent>
+                               infoContent="Bạn sẽ không thất vọng khi lựa chọn"> </HeaderContent>
 
-                <div className="row box-productFeature">
+                <div className="row flex-row box-productFeature">
                     <Slider {...settings}>
-                        {props.data && props.data.length > 3 &&
-                            props.data.map((item, index) => {
+                        {uniqueProducts && uniqueProducts.length > 0 &&
+                            uniqueProducts.map((item) => {
                                 return (
-                                    <ItemProduct id={item.id} key={index} width={350} height={419} type="col-lg-4 col-md-6" name={item.name} img={item.productDetail[0].productImage[0].image}
-                                        price={item.productDetail[0].originalPrice} discountPrice={item.productDetail[0].discountPrice}>
+                                    <ItemProduct id={item.id} key={item.id} width={350} height={419}
+                                                 type="col-lg-4 col-md-6" name={item.name}
+                                                 img={item.productDetail[0].productImage[0].image}
+                                                 price={item.productDetail[0].originalPrice}
+                                                 discountPrice={item.productDetail[0].discountPrice}>
                                     </ItemProduct>
                                 )
                             })
                         }
-
-
                     </Slider>
                 </div>
-
-
-
             </div>
         </section>
-
-
-
     );
 }
 

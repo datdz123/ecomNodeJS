@@ -35,7 +35,7 @@ const TopMenu = props => {
                                     </NavLink>
                                         :
                                         <a href="/login">
-                                            Đăng nhập 123
+                                            Đăng nhập
                                         </a>
                                     }
 
