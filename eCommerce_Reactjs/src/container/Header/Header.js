@@ -77,13 +77,13 @@ const Header = props => {
             <TopMenu user={user && user} />
             <div className="main_menu">
                 <div className="container">
-                    <nav className="navbar navbar-expand-lg navbar-light w-100">
+                    <nav className="navbar navbar-expand-lg navbar-light w-100 text-white">
                         {/* Brand and toggle get grouped for better mobile display */}
-                        <NavLink to="/" className="navbar-brand logo_h">
+                        <NavLink to="/" className="navbar-brand logo_h text-white">
                             {/*<img src="/resources/img/logo.png" alt="" />*/}
                             <h1>QD SHOP</h1>
                         </NavLink>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse"
+                        <button className="navbar-toggler text-white" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span className="icon-bar" />
@@ -95,31 +95,31 @@ const Header = props => {
                             <div className="row w-100 mr-0">
                                 <div className="col-lg-9 pr-0">
                                     <ul className="nav navbar-nav center_nav pull-right">
-                                        <li className="nav-item">
+                                        <li className="nav-item text-white">
                                             <NavLink exact to="/" className="nav-link"
                                                 activeClassName="selected" activeStyle={{ color: '#659DBD' }}>
                                                 Trang chủ
                                             </NavLink>
                                         </li>
-                                        <li className="nav-item ">
+                                        <li className="nav-item text-white ">
                                             <NavLink to="/shop" className="nav-link"
                                                 activeClassName="selected" activeStyle={{ color: '#659DBD' }}>
                                                 Cửa hàng
                                             </NavLink>
                                         </li>
-                                        <li className="nav-item ">
+                                        <li className="nav-item text-white ">
                                             <NavLink to="/blog" className="nav-link"
                                                 activeClassName="selected" activeStyle={{ color: '#659DBD' }}>
                                                 Tin tức
                                             </NavLink>
                                         </li>
-                                        <li className="nav-item">
+                                        <li className="nav-item text-white">
                                             <NavLink to="/voucher" className="nav-link"
                                                 activeClassName="selected" activeStyle={{ color: '#659DBD' }}>
                                                 Giảm giá
                                             </NavLink>
                                         </li>
-                                        <li className="nav-item">
+                                        <li className="nav-item text-white">
                                             <NavLink to="/about" className="nav-link" activeClassName="selected" activeStyle={{ color: '#659DBD' }}>
                                             Giới thiệu
                                             </NavLink>
@@ -128,7 +128,7 @@ const Header = props => {
                                 </div>
                                 <div className="col-lg-3 pr-0">
                                     <ul className="nav navbar-nav navbar-right right_nav pull-right">
-                                        <li className="nav-item">
+                                        <li className="nav-item text-white">
                                         <Link to={"/user/messenger"} className="icons">
                                             <i class="fa-brands fa-facebook-messenger"></i>
                                             </Link>
@@ -137,14 +137,14 @@ const Header = props => {
                                             }
                                            
                                         </li>
-                                        <li className="nav-item">
+                                        <li className="nav-item text-white">
                                             <Link to={"/shopcart"} className="icons">
                                                 <i className="ti-shopping-cart" />
 
                                             </Link>
                                             <span className="box-quantity-cart">{dataCart && dataCart.length}</span>
                                         </li>
-                                        <li className="nav-item">
+                                        <li className="nav-item text-white">
                                             <Link to={`/user/detail/${user && user.id ? user.id : ''}`} className="icons">
                                                 <i className="ti-user" aria-hidden="true" />
                                             </Link>

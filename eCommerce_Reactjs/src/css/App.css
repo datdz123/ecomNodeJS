@@ -1,21 +1,35 @@
-.box-email-verify{
-    display: flex;
-    align-items: center;
-    
+.single-feature{
+    background: #FFFBF6;
 }
-.box-email-verify svg{
-   margin-left: 4px;
-    
+section.new_product_area.section_gap_top.section_gap_bottom_custom{
+    padding-top: 0;
+    background: #880000;
 }
-.text-verify{
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
+.main_title{
+    padding-top: 40px;
+    color: white;
+    background: #880000;
+    padding-bottom: 20px;
+    margin-bottom: 0;
 }
-.carousel-inner{
-    width: 452px !important;
-    height: 450px !important;
+.main_title h2 {
+    color: white;
 }
-.text-14{
-    font-size: 16px;
+.main_title p {
+    color: white;
 }
+.new_product_area .row{
+    background: #FFFFFF !important;
+}
+.blog-area .main_title{
+    background: white !important;
+    color: black !important;
+
+}
+.blog-area .main_title p{
+    color: black !important;
+}
+.blog-area .main_title span{
+    color: black !important;
+}
+

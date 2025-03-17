@@ -1,3 +1,30 @@
+.header_area{
+    .main_menu {
+        background: #880000 !important;
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+    .icons{
+        color: white !important;
+    }
+
+}
+.top_menu{
+    background: #880000 !important;
+    color: white;
+    .float-left{
+        color: white;
+        p{
+            color: white !important;
+        }
+
+    }
+    a{
+        color: white !important;
+    }
+}
 .main_menu{
     transition: width 2s, top 4s;
     &.sticky{
@@ -40,4 +67,8 @@
         font-size: 12px;
     }
    
-} 
+}
+
+.header_area .navbar .nav .nav-item .nav-link{
+    color:white !important;
+}

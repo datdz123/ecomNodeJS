@@ -86,15 +86,11 @@ function HomePage(props) {
                         )
                     })
                 }
-
-
             </Slider>
-
-
             <MainFeature></MainFeature>
             {/*<ProductFeature title={"Gợi ý sản phẩm"} data={dataProductRecommend}></ProductFeature>*/}
-            <ProductFeature title={"Sản phẩm đặc trưng"} data={dataProductFeature}></ProductFeature>
-            <NewProductFeature title="Sản phẩm mới" description="Những sản phẩm vừa ra mắt mới lạ cuốn hút người xem" data={dataNewProductFeature}></NewProductFeature>
+            {/*<ProductFeature title={"Sản phẩm đặc trưng"} data={dataProductFeature}></ProductFeature>*/}
+            <NewProductFeature title="Deal Sốc" description="Những sản phẩm vừa ra mắt mới lạ cuốn hút người xem" data={dataNewProductFeature}></NewProductFeature>
             <HomeBlog data={dataNewBlog} />
         </div>
     );

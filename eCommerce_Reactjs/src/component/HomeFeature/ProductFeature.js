@@ -27,13 +27,13 @@ function ProductFeature(props) {
                 <HeaderContent mainContent={props.title}
                                infoContent="Bạn sẽ không thất vọng khi lựa chọn"> </HeaderContent>
 
-                <div className="row flex-row box-productFeature">
+                <div className="row flex-row box-productFeature mt-3">
                     <Slider {...settings}>
-                        {uniqueProducts && uniqueProducts.length > 0 &&
+                        {uniqueProducts && uniqueProducts.length > 1 &&
                             uniqueProducts.map((item) => {
                                 return (
                                     <ItemProduct id={item.id} key={item.id} width={350} height={419}
-                                                 type="col-lg-4 col-md-6" name={item.name}
+                                                 type="col-lg-4 col-md-6 " name={item.name}
                                                  img={item.productDetail[0].productImage[0].image}
                                                  price={item.productDetail[0].originalPrice}
                                                  discountPrice={item.productDetail[0].discountPrice}>

@@ -4,25 +4,22 @@ import HeaderContent from '../Content/HeaderContent';
 function NewProductFeature(props) {
 
     return (
-        <section className="new_product_area section_gap_top section_gap_bottom_custom">
-            <div className="container">
+        <section className="new_product_area section_gap_top section_gap_bottom_custom ">
+            <div className="container ">
                 <HeaderContent mainContent={props.title}
                     infoContent={props.description}> </HeaderContent>
-                <div className="row">
-
-                    <div className="col-lg-12  mt-lg-0">
+                <div className="row mt-5 pt-3">
+                    <div className="col-lg-12  mt-lg-0 ">
                         <div className="row">
                             {props.data && props.data.length > 0 &&
                                 props.data.map((item, index) => {
                                     return (
-                                        <ItemProduct id={item.id} type="col-lg-3 col-md-3" name={item.name} img={item.productDetail[0].productImage[0].image}
+                                        <ItemProduct id={item.id} type="col-lg-3 col-md-3 " name={item.name} img={item.productDetail[0].productImage[0].image}
                                             price={item.productDetail[0].originalPrice} discountPrice={item.productDetail[0].discountPrice}>
                                         </ItemProduct>
                                     )
                                 })
                             }
-
-
                         </div>
                     </div>
                 </div>
