@@ -22,8 +22,8 @@ const TopMenu = props => {
                 <div className="row">
                     <div className="col-lg-7">
                         <div className="float-left">
-                            <p>Điện thoại: 0344585983 </p>
-                            <p>email: tiendatvxhg@gmail.com</p>
+                            <p>Điện thoại: 0344585999 </p>
+                            <p>email: lorem@gmail.com</p>
                         </div>
                     </div>
                     <div className="col-lg-5">

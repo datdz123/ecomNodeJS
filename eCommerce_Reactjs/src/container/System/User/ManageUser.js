@@ -109,7 +109,6 @@ const ManageUser = () => {
                     <FormSearch title={"số điện thoại"} handleOnchange={handleOnchangeSearch} handleSearch={handleSearchUser} />
                     </div>
                     <div className='col-8'>
-                    <button  style={{float:'right'}} onClick={() => handleOnClickExport()} className="btn btn-success" >Xuất excel <i class="fa-solid fa-file-excel"></i></button>
                     </div>
                     </div>
                
