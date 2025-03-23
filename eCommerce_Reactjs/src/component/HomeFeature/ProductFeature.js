@@ -32,8 +32,8 @@ function ProductFeature(props) {
                         {uniqueProducts && uniqueProducts.length > 1 &&
                             uniqueProducts.map((item) => {
                                 return (
-                                    <ItemProduct id={item.id} key={item.id} width={350} height={419}
-                                                 type="col-lg-4 col-md-6 " name={item.name}
+                                    <ItemProduct id={item.id} key={item.id} width={500} height={419}
+                                                 type=" col-lg-3 col-md-3  " name={item.name}
                                                  img={item.productDetail[0].productImage[0].image}
                                                  price={item.productDetail[0].originalPrice}
                                                  discountPrice={item.productDetail[0].discountPrice}>

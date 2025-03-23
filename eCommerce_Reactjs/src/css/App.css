@@ -3,20 +3,20 @@
 }
 section.new_product_area.section_gap_top.section_gap_bottom_custom{
     padding-top: 0;
-    background: #880000;
+    background: #FFFFFF;
 }
 .main_title{
     padding-top: 40px;
-    color: white;
-    background: #880000;
+    color: black;
+    background: #FFFFFF;
     padding-bottom: 20px;
     margin-bottom: 0;
 }
 .main_title h2 {
-    color: white;
+    color: black;
 }
 .main_title p {
-    color: white;
+    color: black;
 }
 .new_product_area .row{
     background: #FFFFFF !important;
@@ -34,5 +34,7 @@ section.new_product_area.section_gap_top.section_gap_bottom_custom{
 }
 
 .footer-area{
-    background:#880000 !important; ;
+}
+.home_banner_area .box-banner{
+    height: 100vh !important;
 }
