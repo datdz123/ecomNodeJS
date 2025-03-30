@@ -38,3 +38,6 @@ section.new_product_area.section_gap_top.section_gap_bottom_custom{
 .home_banner_area .box-banner{
     height: 100vh !important;
 }
+.logo-header{
+    max-height: 50px;
+}
