@@ -127,16 +127,28 @@ const Header = props => {
                                 </div>
                                 <div className="col-lg-3 pr-0">
                                     <ul className="nav navbar-nav navbar-right right_nav pull-right">
+
+                                        <li className="nav-item text-white">
+                                            <Link to={"/user/messenger"} className="icons">
+                                                <i className="fa-brands fa-facebook-messenger"></i>
+                                            </Link>
+                                            {quantityMessage > 0 &&
+                                                <span className="box-message-quantity">{quantityMessage}</span>
+                                            }
+
+                                        </li>
+
                                         <li className="nav-item ">
                                             <Link to={"/shopcart"} className="icons">
-                                                <i className="ti-shopping-cart" />
+                                                <i className="ti-shopping-cart"/>
 
                                             </Link>
                                             <span className="box-quantity-cart">{dataCart && dataCart.length}</span>
                                         </li>
                                         <li className="nav-item ">
-                                            <Link to={`/user/detail/${user && user.id ? user.id : ''}`} className="icons">
-                                                <i className="ti-user" aria-hidden="true" />
+                                            <Link to={`/user/detail/${user && user.id ? user.id : ''}`}
+                                                  className="icons">
+                                                <i className="ti-user" aria-hidden="true"/>
                                             </Link>
                                         </li>
 
@@ -147,7 +159,7 @@ const Header = props => {
                     </nav>
                 </div>
             </div>
-        </header >
+        </header>
 
 
     );
