@@ -1,4 +1,3 @@
-
 import React, { Component, Fragment, useEffect, useState } from 'react';
 import './css/App.css';
 import Header from './container/Header/Header';
@@ -9,6 +8,7 @@ import DetailProductPage from './container/DetailProduct/DetailProductPage';
 import ShopCartPage from './container/ShopCart/ShopCartPage';
 import BlogPage from './container/Blog/BlogPage';
 import DetailBlog from './container/Blog/DetailBlog';
+import About from './component/About';
 
 import HomePageAdmin from './container/System/HomePageAdmin';
 import { path } from '../src/utils/constant'
@@ -111,7 +111,7 @@ function App() {
           </Route>
           <Route path="/about">
             <Header />
-
+            <About />
             <Footer />
           </Route>
           
